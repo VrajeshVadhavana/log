@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Markazi+Text:wght@400;500&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: "poppins",sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+        }
+        form{
+            width: 50%;
+            margin: 12rem auto;
+            line-height: 1.8rem;
+            background-color: black;
+        }
+        form input{
+            background-color: black;
+            border: 2px solid lawngreen;
+            width: 100%;
+            border-radius: 0.5rem;
+            padding:0.9rem 1rem;
+            font-size: 1.5rem;
+            color: white;
+        }
+        form input::placeholder{
+            letter-spacing: 1px;
+            color:rgba(255, 255, 255, 0.696);
+        }
+        form button{
+            display: block;
+            margin: auto;
+            font-size: 1.5rem;
+            font-weight: 400;
+            border-radius: 0.6rem;
+            color:white;
+            background-color: black;
+            border: 2px solid lawngreen;
+            padding: 0.5rem 1rem;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <form action="/data" method="post">
+        <input type="text" id="user" placeholder="Username" name="username"><br><br>
+        <input type="password" id="password" placeholder="Password" name="password"><br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
